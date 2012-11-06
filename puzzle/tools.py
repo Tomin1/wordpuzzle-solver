@@ -21,6 +21,7 @@ from puzzle.puzzle import Puzzle
 import re
 
 def parse_from_file(path):
+    """Parses puzzle from file (in given path)"""
     puzzle = []
     words = []
     with open(path,'r') as fo:
@@ -44,7 +45,11 @@ def parse_from_file(path):
     return puzzle
 
 def parse_from_table(table):
-    regex = re.compile(r'\t|\s+')
+    """Parses puzzle from table
+    
+    Mostly used by parse_from_file.
+    """
+    regex = re.compile(r'\t|\s+|,|;')
     for i in range(0,len(table)):
         table[i] = regex.split(table[i].strip().upper())
     return Puzzle(table)

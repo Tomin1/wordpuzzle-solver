@@ -17,10 +17,10 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #  
-from util.printing_tools import print_err, print_msg
+from util.printing_tools import print_err
 from puzzle.tools import *
 
-version = "v0"
+version = "v1"
 
 def print_version(command):
     print_msg('''Words Search Puzzle Solver, version '''+version+'''
@@ -48,4 +48,3 @@ if __name__ == "__main__":
         sys.exit(main(sys.argv))
     except KeyboardInterrupt:
         raise
-        sys.exit(2)

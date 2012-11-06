@@ -19,6 +19,7 @@
 #  
 
 class Word:
+    """Contains a word"""
     def __init__(self,word):
         self.word = word.upper()
         self.repr = word
@@ -39,12 +40,22 @@ class Word:
             return self.repr
     
     def setFound(self,position,direction):
+        """Sets the word as found
+        
+        Sets the word as found and gives it position and direction.
+        """
         self.found = True
         self.position = position
         self.direction = direction
 
 class Puzzle:
+    """Puzzle"""
     def __init__(self,puzzle):
+        """Constructor
+        
+        This is the actual puzzle. 
+        Requires parsed puzzle (see tools) as parameter.
+        """
         self.puzzle = puzzle
         self.words = []
         self.charMap = CharacterMap(self)
@@ -56,10 +67,12 @@ class Puzzle:
         return string[1:]
     
     def add_words(self,words):
+        """Adds words"""
         for word in words:
             self.words.append(Word(word))
     
     def solve(self):
+        """Solves the puzzle"""
         for word in self.words:
             pair = word.word[0:2]
             for p in self.charMap.getVectors(pair):
@@ -68,6 +81,11 @@ class Puzzle:
                         word.setFound(pos,d)
     
     def testWord(self,word,pos,d):
+        """Tests for word 
+        
+        Tests for word in given position (tuple pos) to given 
+        direction (int d).
+        """
         x,y = pos
         i = 0
         for c in self.getVector(pos,d,len(word)):
@@ -77,6 +95,7 @@ class Puzzle:
         return True
     
     def getCharacters(self):
+        """Generator, yields all characters"""
         x = -1
         y = 0
         while y < len(self.puzzle):
@@ -89,6 +108,10 @@ class Puzzle:
         return
     
     def getVector(self,begin_pos,direction,length):
+        """Generator, yields characters
+        
+        Yields characters from given position to given direction
+        """
         if direction == 4:
             return
         x,y = begin_pos
@@ -102,19 +125,23 @@ class Puzzle:
         return
     
     def getSolved(self):
+        """Generator, yields found words"""
         for word in self.words:
             if word.found:
                 yield (word, word.position)
         return
     
     def getUnsolved(self):
+        """Generator, yields words that aren't found"""
         for word in self.words:
             if not word.found:
                 yield (word, word.position)
         return
 
 class CharacterMap:
+    """Character map"""
     def __init__(self,puzzle):
+        """Constructor, requres Puzzle-object as parameter"""
         self.map = {}
         for c,pos in puzzle.getCharacters():
             for d in range(0,9):
@@ -132,6 +159,7 @@ class CharacterMap:
         return str(self.map)
     
     def getVectors(self,needle):
+        """Generator, yields all vectors in the map"""
         for i in self.map:
             if i == needle:
                 yield self.map[i]
