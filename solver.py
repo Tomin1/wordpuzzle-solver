@@ -36,13 +36,11 @@ def main(args):
     puzzle = parse_from_file(args[1])
     puzzle.solve()
     print("\033[1mWords found:\033[0m")
-    for word in puzzle.words:
-        if word.found:
-            print(word, word.position)
+    for word in puzzle.getSolved():
+        print(*word)
     print("\033[1mWords not found:\033[0m")
-    for word in puzzle.words:
-        if not word.found:
-            print(word)
+    for word in puzzle.getUnsolved():
+        print(*word)
 
 if __name__ == "__main__":
     import sys

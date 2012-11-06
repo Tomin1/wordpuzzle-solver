@@ -47,7 +47,6 @@ class Puzzle:
     def __init__(self,puzzle):
         self.puzzle = puzzle
         self.words = []
-        self.charNumbers = self.countCharacters()
         self.charMap = CharacterMap(self)
     
     def __str__(self):
@@ -56,7 +55,28 @@ class Puzzle:
             string = "\n".join([string,str(row)])
         return string[1:]
     
-    def iterateCharacters(self):
+    def add_words(self,words):
+        for word in words:
+            self.words.append(Word(word))
+    
+    def solve(self):
+        for word in self.words:
+            pair = word.word[0:2]
+            for p in self.charMap.getVectors(pair):
+                for pos,d in p:
+                    if self.testWord(word,pos,d):
+                        word.setFound(pos,d)
+    
+    def testWord(self,word,pos,d):
+        x,y = pos
+        i = 0
+        for c in self.getVector(pos,d,len(word)):
+            if word.word[i] != c:
+                return False
+            i = i + 1
+        return True
+    
+    def getCharacters(self):
         x = -1
         y = 0
         while y < len(self.puzzle):
@@ -68,38 +88,7 @@ class Puzzle:
                 x = 0
         return
     
-    def add_words(self,words):
-        for word in words:
-            self.words.append(Word(word))
-    
-    def countCharacters(self):
-        characters = {}
-        for row in self.puzzle:
-            for char in row:
-                try:
-                    characters[char] = characters[char] + 1
-                except KeyError:
-                    characters[char] = 1
-        return characters
-    
-    def solve(self):
-        for word in self.words:
-            pair = word.word[0:2]
-            for p in self.charMap.iterateVectors(pair):
-                for pos,d in p:
-                    if self.testWord(word,pos,d):
-                        word.setFound(pos,d)
-    
-    def testWord(self,word,pos,d):
-        x,y = pos
-        i = 0
-        for c in self.iterateVector(pos,d,len(word)):
-            if word.word[i] != c:
-                return False
-            i = i + 1
-        return True
-    
-    def iterateVector(self,begin_pos,direction,length):
+    def getVector(self,begin_pos,direction,length):
         if direction == 4:
             return
         x,y = begin_pos
@@ -111,15 +100,27 @@ class Puzzle:
             x = x + direction % 3 - 1
             y = y + direction // 3 - 1
         return
+    
+    def getSolved(self):
+        for word in self.words:
+            if word.found:
+                yield (word, word.position)
+        return
+    
+    def getUnsolved(self):
+        for word in self.words:
+            if not word.found:
+                yield (word, word.position)
+        return
 
 class CharacterMap:
     def __init__(self,puzzle):
         self.map = {}
-        for c,pos in puzzle.iterateCharacters():
+        for c,pos in puzzle.getCharacters():
             for d in range(0,9):
                 if d == 4:
                     continue
-                pair = [i for i in puzzle.iterateVector(pos,d,2)]
+                pair = [i for i in puzzle.getVector(pos,d,2)]
                 if len(pair) < 2:
                     continue
                 try:
@@ -130,7 +131,7 @@ class CharacterMap:
     def __str__(self):
         return str(self.map)
     
-    def iterateVectors(self,needle):
+    def getVectors(self,needle):
         for i in self.map:
             if i == needle:
                 yield self.map[i]
