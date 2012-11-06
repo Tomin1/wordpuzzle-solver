@@ -18,28 +18,33 @@
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #  
 from puzzle.puzzle import Puzzle
+import re
 
 def parse_from_file(path):
     puzzle = []
     words = []
     with open(path,'r') as fo:
         for row in fo:
+            if row.startswith("#"):
+                continue
             row = row[:-1]
-            if not words and len(row) > 0:
-                puzzle.append(row)
-                continue
-            if not words and len(row) == 0:
-                words.append(True)
-                continue
+            if not words:
+                if len(row) > 0:
+                    puzzle.append(row)
+                    continue
+                if len(row) == 0:
+                    if puzzle:
+                        words.append(True)
+                    continue
             if words and len(row) > 0:
                 words.append(row)
                 continue
-    
     puzzle = parse_from_table(puzzle)
     puzzle.add_words(words[1:])
     return puzzle
 
 def parse_from_table(table):
+    regex = re.compile(r'\t|\s+')
     for i in range(0,len(table)):
-        table[i] = table[i].split("\t")
+        table[i] = regex.split(table[i].strip().upper())
     return Puzzle(table)

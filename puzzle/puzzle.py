@@ -20,7 +20,8 @@
 
 class Word:
     def __init__(self,word):
-        self.word = word
+        self.word = word.upper()
+        self.repr = word
         self.found = False
         self.position = None
         self.direction = None
@@ -29,7 +30,18 @@ class Word:
         return len(self.word)
     
     def __str__(self):
-        return self.word
+        return self.repr
+    
+    def __repr__(self):
+        if self.found:
+            return self.repr+str(self.position)+str(self.direction)
+        else:
+            return self.repr
+    
+    def setFound(self,position,direction):
+        self.found = True
+        self.position = position
+        self.direction = direction
 
 class Puzzle:
     def __init__(self,puzzle):
@@ -76,9 +88,7 @@ class Puzzle:
             for p in self.charMap.iterateVectors(pair):
                 for pos,d in p:
                     if self.testWord(word,pos,d):
-                        word.found = True
-                        word.position = pos
-                        word.direction = d
+                        word.setFound(pos,d)
     
     def testWord(self,word,pos,d):
         x,y = pos
