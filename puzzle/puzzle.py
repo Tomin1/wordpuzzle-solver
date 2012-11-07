@@ -20,7 +20,7 @@
 
 """Puzzle handling and storing module
 
-This module contains most things to represent and solve puzzles.
+Contains most things to represent and solve puzzles.
 """
 
 class Word:
