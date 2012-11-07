@@ -1,0 +1,70 @@
+# Name: FOSS
+# Comments: Free puzzle to be distributed as an example with 
+# Word Search Puzzle solving program
+# Licensed under: Public Domain
+
+W   J   C   D   A   G   X   Q   L   I   H   G   P   F   N   J   J   D   I   P   P   N   M   Q   Y   K   Q   Y   U   N   B   H   A   R   G   S   Y   N   F   K   H   V   I   W   P   K   H   E   F   Y    
+I   D   W   M   T   T   J   Q   D   H   K   W   H   H   Q   I   J   R   F   Z   W   N   C   X   E   X   C   Q   M   A   O   Y   N   Y   B   Z   R   Q   N   V   V   M   C   X   Y   F   U   L   W   D    
+U   I   T   A   G   I   K   J   K   A   C   B   X   Q   S   C   G   K   H   H   Y   Q   J   J   W   W   E   U   T   S   P   L   G   Y   B   F   P   R   G   D   V   B   L   W   B   I   W   X   I   P    
+X   P   G   N   E   B   L   Y   I   M   A   O   M   F   Q   C   X   J   C   R   Y   Z   A   N   L   I   Q   G   Z   I   V   P   L   L   L   E   L   L   Z   G   V   A   C   B   A   Q   B   C   V   W    
+M   W   W   Q   L   J   V   W   M   V   Z   G   V   Q   Y   M   F   O   R   L   N   A   H   Y   D   R   E   K   W   W   X   G   V   I   N   O   M   E   V   B   V   U   N   D   H   H   U   E   C   I    
+F   N   V   F   P   I   M   E   S   A   F   W   Q   U   B   Q   A   O   Q   I   R   I   Q   H   W   H   M   L   B   F   K   T   Y   Q   F   W   H   D   O   G   F   U   Q   K   A   C   L   M   S   V    
+G   K   P   O   H   U   Z   M   P   P   I   Z   N   C   F   D   J   Q   D   R   P   V   T   H   O   X   K   L   A   Z   Z   W   K   G   X   Y   L   W   H   I   U   Z   C   Y   R   F   X   L   R   I    
+P   F   J   N   O   W   L   H   K   P   O   F   K   J   D   V   P   X   S   G   A   L   U   N   E   L   T   X   V   M   T   D   K   W   X   A   K   G   J   V   R   B   X   U   F   D   Y   Y   N   G    
+F   Q   Y   D   P   F   P   H   S   D   H   Z   B   L   O   E   I   J   H   N   S   H   M   F   L   I   R   S   E   E   A   E   H   A   E   M   F   H   C   V   Y   U   F   P   P   Q   G   L   A   A    
+V   V   W   K   B   O   I   P   O   A   V   J   I   Q   B   R   O   Q   X   A   R   E   M   Q   Q   A   L   T   W   Z   R   R   A   Y   K   Y   E   L   R   N   R   D   A   L   Y   G   V   K   F   S    
+D   B   B   M   W   L   P   V   R   U   W   I   F   S   C   X   X   X   J   P   I   T   S   Z   A   K   J   J   Z   M   H   X   R   R   O   T   Z   H   L   P   O   P   O   I   A   U   D   V   D   X    
+P   N   U   Q   R   W   R   O   H   L   H   O   D   Y   P   N   C   K   S   J   Q   T   W   D   A   F   C   P   I   H   V   T   E   W   R   Q   Q   M   A   S   A   F   V   Q   J   P   V   M   G   C    
+V   O   O   Z   S   H   B   F   G   G   U   M   S   M   F   U   L   Z   G   F   Q   W   N   T   L   I   B   R   E   O   F   F   I   C   E   M   X   T   N   T   D   T   O   Q   C   C   V   L   X   A    
+T   M   W   O   C   A   N   M   T   J   R   Y   A   K   M   K   L   Y   Q   P   I   I   H   Z   G   K   C   A   Z   M   K   T   A   R   E   Z   V   N   I   J   R   R   F   S   N   G   N   G   M   Z    
+B   C   H   A   R   F   S   B   J   R   A   I   S   I   D   C   V   T   H   U   X   A   T   X   U   K   Z   L   I   G   O   L   S   L   X   B   D   Q   C   A   S   N   A   Q   Y   F   O   C   J   C    
+O   P   R   S   P   G   K   M   N   Y   H   A   T   K   X   D   Y   D   J   X   D   Q   G   L   G   D   B   Y   V   H   J   V   E   F   A   V   G   C   J   N   V   R   J   P   F   L   R   P   L   G    
+V   W   Z   H   Z   W   U   X   S   Q   Z   R   R   I   U   H   P   P   M   O   Y   M   B   O   L   A   E   M   L   S   R   K   N   U   I   S   V   V   A   Z   U   D   N   Z   O   H   Z   M   Y   W    
+T   I   J   H   X   U   J   W   J   T   O   O   V   D   N   W   D   I   E   R   Z   J   S   C   R   E   L   U   S   X   H   L   A   G   G   E   E   F   E   N   A   Y   X   N   S   T   J   Z   M   S    
+Q   G   R   R   R   D   T   Z   A   P   L   N   A   E   F   R   R   Z   O   G   J   P   Q   L   Q   L   H   R   T   A   U   Y   N   X   G   U   A   T   K   F   H   W   U   O   F   Z   A   K   A   Q    
+E   F   I   J   M   Y   E   F   H   Y   P   C   A   J   S   B   M   X   Q   M   O   H   Q   A   I   Y   I   J   F   H   F   U   A   W   X   R   O   G   F   I   V   K   L   P   E   G   J   K   M   Y    
+R   N   U   X   L   Z   K   G   I   C   F   B   P   N   U   L   G   O   C   C   L   X   G   O   F   L   U   B   C   W   I   X   R   I   U   R   X   A   E   Z   N   H   N   Z   E   E   A   K   M   B    
+S   Q   W   H   B   J   U   M   Q   O   O   V   V   D   M   Q   A   L   Q   U   Z   L   A   A   C   I   A   I   X   M   W   K   K   Q   V   F   W   Z   R   E   Y   H   B   V   D   N   J   B   E   A    
+Y   P   T   C   J   H   Z   K   R   L   K   H   C   H   S   X   D   J   O   S   M   G   Y   D   Z   G   N   L   L   H   X   N   N   A   I   U   A   K   E   V   E   R   X   O   A   W   G   B   I   R    
+E   Y   J   B   M   R   H   H   Y   N   L   T   K   P   G   F   E   J   Z   H   M   U   H   T   V   F   Q   K   K   D   K   X   L   J   N   S   E   F   W   S   A   E   W   G   Q   Q   R   Q   W   N    
+B   I   U   Z   N   F   A   A   H   B   U   K   T   U   C   R   G   G   T   P   F   E   X   L   H   H   T   A   L   B   M   D   M   M   D   U   O   C   Q   Y   W   Q   Z   J   S   K   J   V   J   G    
+I   M   X   M   S   Q   B   I   B   D   B   D   X   Z   I   A   H   S   T   A   L   L   M   A   N   P   S   I   T   F   S   N   U   X   J   L   I   Y   T   K   F   J   Y   T   K   W   P   L   V   U    
+B   I   S   S   I   P   O   H   U   B   S   O   A   Z   G   I   D   V   Z   K   E   J   F   O   E   K   G   L   H   F   Q   K   P   J   E   I   I   E   V   G   G   A   S   P   J   V   M   R   M   U    
+Q   F   D   U   L   M   L   P   M   S   G   E   V   Z   M   D   R   W   W   X   U   R   F   F   N   P   N   L   D   Y   N   O   M   N   Y   Q   H   Z   U   O   A   R   J   W   L   F   N   B   Q   I    
+U   L   W   R   N   R   P   Z   K   F   D   Y   X   V   W   E   Q   R   L   B   L   X   S   B   N   G   H   V   I   X   T   I   P   R   V   P   T   A   P   B   Z   U   Y   M   J   Q   I   T   R   E    
+N   G   A   H   E   E   G   X   W   W   Q   W   G   Q   S   N   V   M   D   Q   N   O   Z   Z   P   Y   Q   L   S   E   W   L   H   C   S   A   G   E   I   I   W   N   L   T   V   S   M   O   T   L    
+E   C   A   E   N   P   L   L   H   Z   E   X   B   Q   R   G   Z   K   U   Y   N   V   K   D   Q   L   E   P   N   Y   E   D   Y   R   M   G   Y   F   D   O   M   U   B   B   V   X   K   O   N   A    
+M   M   C   R   G   H   X   F   M   C   R   V   S   J   C   K   M   E   A   K   D   K   L   P   K   U   K   P   L   N   M   D   P   U   D   I   J   N   Q   Q   K   O   R   N   N   Y   V   U   B   Q    
+W   B   L   J   K   F   U   T   X   Y   R   H   Z   J   U   G   Q   Z   W   I   N   O   O   H   O   T   F   Y   U   F   N   J   W   J   J   I   U   I   V   H   V   C   N   K   Q   F   T   L   G   J    
+H   W   F   P   O   H   D   R   A   W   K   Z   H   V   U   I   Y   K   M   T   J   O   F   C   O   W   W   P   T   A   O   C   G   H   L   M   J   U   H   H   S   I   E   I   W   I   T   S   B   S    
+J   O   K   L   Z   N   M   D   L   D   J   T   T   H   H   W   O   Y   J   R   K   T   P   M   L   J   E   Y   L   V   L   Q   O   D   K   Y   T   F   P   G   U   K   V   F   I   V   R   K   E   G    
+F   O   G   A   A   J   L   B   U   D   I   I   N   L   H   E   J   I   D   O   P   S   C   P   N   D   H   Y   E   F   L   O   R   U   X   K   Y   J   M   Z   F   C   U   E   Q   H   S   G   G   B    
+M   I   N   P   B   G   Z   V   F   U   G   G   U   S   Y   V   M   E   G   V   I   X   B   J   J   B   A   J   N   M   H   E   U   I   T   G   F   C   S   S   R   J   A   K   Y   Z   L   V   B   X    
+I   R   S   A   I   I   M   E   N   S   N   R   S   U   Z   M   O   X   W   B   B   W   V   T   E   W   E   D   K   U   G   A   T   P   Q   Q   A   Z   T   M   B   J   Q   S   F   F   N   A   R   D    
+Y   O   A   C   D   Q   N   T   D   K   O   C   Q   G   E   L   M   V   N   P   F   T   B   Z   W   M   U   B   K   X   O   F   T   P   U   V   Z   J   M   P   L   W   P   O   H   L   G   B   B   C    
+R   J   A   H   T   B   Z   A   S   J   G   H   Z   H   I   E   P   D   I   S   Y   B   A   Q   S   P   H   A   W   N   N   Z   Z   F   U   B   M   K   I   G   L   P   E   K   L   B   B   Z   S   X    
+J   R   W   E   B   J   H   M   N   H   N   X   Q   I   Y   W   G   Y   S   N   T   E   N   U   G   D   K   I   N   N   X   W   R   J   K   V   V   Z   R   J   O   E   N   T   P   Q   J   B   Z   M    
+Z   R   J   A   T   U   B   O   B   J   D   Y   F   S   C   W   P   M   F   P   T   Q   G   U   Y   C   K   E   X   N   D   T   V   P   Q   N   M   Y   G   D   O   I   N   G   Z   Z   G   V   Z   S    
+X   A   L   S   V   O   H   Q   P   U   V   W   V   G   F   X   B   H   M   X   L   X   L   T   C   D   L   Y   T   F   J   G   V   D   J   Z   W   P   P   K   Y   F   J   E   R   I   V   F   X   K    
+J   R   T   Y   G   T   Q   M   V   D   C   E   M   I   J   D   Z   Q   K   S   B   S   Z   Y   V   Z   E   O   M   S   N   G   J   R   P   G   U   I   I   X   U   W   V   B   G   Q   C   K   K   T    
+J   X   O   J   Y   B   M   P   R   T   W   C   S   P   E   F   J   U   R   N   T   J   O   I   I   K   U   X   M   C   Z   E   M   F   Z   R   T   U   O   F   Y   N   M   H   I   M   B   T   V   B    
+L   M   X   P   Q   P   B   C   E   N   Q   Q   K   W   L   L   Z   L   I   N   U   X   H   V   Z   K   H   P   N   G   M   K   Y   P   R   O   B   T   D   F   J   U   P   V   C   S   U   P   G   D    
+A   A   D   M   C   G   U   J   B   G   H   V   A   M   G   C   U   C   I   K   M   I   Z   R   C   Z   E   Y   P   D   M   R   J   G   S   U   R   H   C   U   F   P   H   G   U   A   Z   A   B   A    
+T   K   I   A   I   Q   S   I   E   O   F   J   X   D   Q   N   Q   M   Z   P   V   C   D   A   M   T   A   E   E   O   L   X   F   D   U   F   C   Z   Y   W   S   J   Z   V   P   L   D   X   F   L    
+D   W   C   Z   N   O   L   K   Z   X   I   G   Y   B   R   T   R   R   W   H   E   U   Y   R   O   L   X   O   H   E   J   F   U   Z   Q   J   T   O   W   B   X   J   Z   G   G   Y   G   Y   P   J    
+G   V   F   X   R   B   M   P   I   C   O   Q   N   I   H   F   M   L   F   W   N   O   A   I   Y   F   S   W   F   G   K   K   G   L   Z   X   C   M   U   T   X   A   Z   S   X   P   I   K   O   B    
+
+Linux
+Apache
+Mysql
+LibreOffice
+KDE
+Gnome
+Xorg
+Git
+GNU
+Torvalds
+Stallman
+Mesa
+Wayland
+Python
