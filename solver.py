@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 #
-#  This is supposed to solve Word search puzzles
+#  Word Search Puzzle solving program
 #  Copyright (C) 2012, Tomi Leppänen (aka Tomin)
 #
 #  This program is free software: you can redistribute it and/or modify
@@ -17,34 +17,58 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #  
-from util.printing_tools import print_err
+
+"""Word Search Puzzle solving program
+
+Copyright (C) 2011-2012, Tomi Leppänen
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, 
+and you are welcome to redistribute it under certain conditions.
+See LICENSE file for more information.
+
+Usage: 
+    <the name of this file> -V # Prints version
+    <the name of this file> -h # Prints this help
+    <the name of this file> <filename> # Solves puzzle in <filename> named file.
+"""
+
+from util.printing import print_err, print_msg
 from puzzle.tools import *
 
 version = "v1"
 
 def print_version(command):
-    print_msg('''Words Search Puzzle Solver, version '''+version+'''
-Copyright (C) 2011-2012, Tomi Leppänen
-This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
-This is free software, and you are welcome to redistribute it
-under certain conditions; type `show c' for details.''')
+    """Prints version infromation"""
+    print_msg('''Words Search Puzzle solving program, version '''+version)
 
-def main(args):
-    if len(args) != 2:
-        print_err("Invalid arguments!")
-        return -1
-    puzzle = parse_from_file(args[1])
+def print_usage(command):
+    """Prints usage"""
+    print_msg(__doc__.replace("<the name of this file>",command))
+
+def main(command, *args):
+    """Main function"""
+    if len(args) != 1:
+        print_err('''Invalid arguments!
+See \''''+command+''' -h' for more information.''')
+        return 1
+    if args[0] == "-V":
+        print_version(command)
+        return 0
+    if args[0] == "-h":
+        print_usage(command)
+        return 0
+    puzzle = parse_from_file(args[0])
     puzzle.solve()
     print("\033[1mWords found:\033[0m")
     for word in puzzle.getSolved():
-        print(*word)
+        print_msg(*word)
     print("\033[1mWords not found:\033[0m")
     for word in puzzle.getUnsolved():
-        print(*word)
+        print_msg(*word)
+    return 0
 
 if __name__ == "__main__":
     import sys
     try:
-        sys.exit(main(sys.argv))
+        sys.exit(main(*sys.argv))
     except KeyboardInterrupt:
         raise

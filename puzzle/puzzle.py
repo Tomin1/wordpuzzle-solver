@@ -18,6 +18,11 @@
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #  
 
+"""Puzzle handling and storing module
+
+This module contains most things to represent and solve puzzles.
+"""
+
 class Word:
     """Contains a word"""
     def __init__(self,word):
@@ -49,7 +54,11 @@ class Word:
         self.direction = direction
 
 class Puzzle:
-    """Puzzle"""
+    """Puzzle
+    
+    Contais the puzzle, list of words (Word objects) and a CharacterMap.
+    Solves puzzles when solve-method is called.
+    """
     def __init__(self,puzzle):
         """Constructor
         
@@ -141,7 +150,7 @@ class Puzzle:
 class CharacterMap:
     """Character map"""
     def __init__(self,puzzle):
-        """Constructor, requres Puzzle-object as parameter"""
+        """Constructor, requres Puzzle object as parameter"""
         self.map = {}
         for c,pos in puzzle.getCharacters():
             for d in range(0,9):

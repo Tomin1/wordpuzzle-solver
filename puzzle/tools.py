@@ -17,6 +17,13 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #  
+
+"""Tools for creating puzzles
+
+This module contains tools to create Puzzle objects (see puzzle.puzzle) from 
+files.
+"""
+
 from puzzle.puzzle import Puzzle
 import re
 
